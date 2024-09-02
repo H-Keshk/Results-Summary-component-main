@@ -1,0 +1,377 @@
+/* General Styling */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+margin: 0;
+}
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+display: flex;
+height: 100vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 1.125rem;
+font-family: 'Hanken Grotesk', sans-serif;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+#root, #__next {
+isolation: isolate;
+}
+
+
+
+
+/* Main Styling  */
+main {
+    display: grid;
+    grid-template-columns: 23.2rem 23.2rem;
+    margin-top: 1rem;
+}
+
+/* Blue box styling */
+.quizz-result {
+    height: 31.9rem;
+    background-color: transparent;
+    background: linear-gradient(160deg, hsl(252, 100%, 67%)0.5%, hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.quizz-result p:first-child {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin-top: -0.3rem;
+}
+.score {
+    width: 12.6rem;
+    height: 12.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: transparent;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -0.455rem;
+}
+.score span {
+    font-size: 1.125rem;
+    display: block;
+    color: hsla(0, 0%, 100%, 0.3);
+    margin-top: -0.7rem;
+}
+.comment-head {
+    font-size: 2.05rem;
+    font-weight: 600;
+    margin-top: -1rem;
+}
+.comment-body {
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 15.6rem;
+    margin-top: -1.9rem;
+}
+
+
+/* Summary box styling  */
+.summary {
+    height: 31.9rem;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2.2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 14px 12px 18px 0px hsl(221, 100%, 96%);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.summary > p:first-child {
+    color: hsla(0, 0%, 0%, 0.7);
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+.stats {
+    width: 100%;
+    padding: 0.95rem 1.1rem;
+    margin: 0.47rem 0;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+.field-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.field-name img {
+    margin-right: 0.9rem;
+}
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.06);
+}
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.06);
+}
+.field-score {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+.field-score span {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem 0;
+    margin-top: 2.2rem;
+    border: none;
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    border: 1px solid white;
+    outline: 1px solid hsl(224, 30%, 27%);
+}
+button:active {
+    background-color: transparent;
+    background: linear-gradient(hsl(252, 100%, 67%)0.1%, hsl(241, 81%, 54%));
+}
+
+
+/* Footer styling */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Breakpoints Styling */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 375px) and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .quizz-result {
+        height: 24.5rem;
+    }
+    .quizz-result p:first-child {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+    .score {
+        width: 8.8rem;
+        height: 8.8rem;
+        font-size: 3.3rem;
+        margin-top: -1rem;
+    }
+    .score span {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: -0.55rem;
+    }
+    .comment-head {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .comment-body {
+        font-size: 1rem;
+        width: 15.6rem;
+    }
+
+    .summary {
+        height: 30rem;
+        margin-top: 0;
+        padding: 1.5rem 2rem;
+    }
+    .summary > p:first-child {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .stats {
+        width: 102%;
+        margin: 0 0 0.70rem 0;
+        padding: 1.1rem 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    button {
+        margin-top: 1rem;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        grid-template-columns: 19.2rem 19.2rem;
+    }
+    .quizz-result p:first-child {
+        font-size: 1.3rem;
+    }
+    .score {
+        width: 10rem;
+        height: 10rem;
+        font-size: 3rem;
+    }
+    .score span {
+        font-size: 0.90rem;
+        font-weight: 600;
+        margin-top: -0.55rem;
+    }
+    .comment-head {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    .comment-body {
+        font-size: 1.15rem;
+        width: 15rem;
+    }
+
+    .summary {
+        height: 33rem;
+        margin-top: 0;
+        padding: 3.88rem 2rem;
+    }
+    .summary > p:first-child {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .stats {
+        font-size: 0.98rem;
+        font-weight: 500;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    main {
+        display: grid;
+        grid-template-columns: 20.2rem 20.2rem;
+    }
+    .score {
+        width: 10rem;
+        height: 10rem;
+        font-size: 3rem;
+    }
+    .score span {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: -0.55rem;
+    }
+    .comment-head {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    .comment-body {
+        font-size: 1rem;
+        width: 15rem;
+    }
+
+    .summary {
+        height: 33rem;
+        margin-top: 0;
+        padding: 3.88rem 2rem;
+    }
+    .summary > p:first-child {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .stats {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+    main {
+        grid-template-columns: 22.2rem 22.2rem;
+    }
+    .score {
+        width: 11.5rem;
+        height: 11.5rem;
+        font-size: 3.5rem;
+    }
+    .comment-head {
+        font-size: 1.99rem;
+    }
+    .comment-body {
+        font-size: 1.05rem;
+        width: 15.4rem;
+    }
+
+    .summary {
+        height: 33rem;
+        margin-top: 0;
+        padding: 3.7rem 2rem;
+    }
+    .summary > p:first-child {
+        font-size: 1.45rem;
+        font-weight: 700;
+    }
+}
