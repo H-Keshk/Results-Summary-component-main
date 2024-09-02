@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [](https://github.com/H-Keshk/Results-Summary-component-main)
+- Live Site URL: [](https://h-keshk.github.io/Results-Summary-component-main/)
 
 ## My process
 
